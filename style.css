@@ -1,0 +1,92 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color:transparent;
+    width: 100%;
+    position: fixed;
+    padding:  25px 30px 0 30px;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'PT+Sans' , sans-serif;
+}
+nav li{
+list-style: none;
+display: inline-block;
+padding-right:15px;
+padding-left: 15px;
+margin-top: 20px;
+}
+nav li span { padding-left: 5px;}
+li a {
+    padding: 5px;
+    background-color:rgb(214, 167, 11);
+    text-decoration: none;
+}
+
+h2{ background-color:rgb(214, 167, 11) ;
+margin-top: 10px;
+}
+
+header{
+
+    background-image: url('./res/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   height: 150px;
+    position: relative;
+    overflow: hidden;
+
+}
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.card a {
+    background-color: royalblue;
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+
+}
+.image {
+    position: relative;
+    overflow: hidden;
+}
+.add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out ; 
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4{
+    bottom: 50px;
+    opacity: 1;
+    padding: 20px;
+    text-decoration: none;
+}
+
